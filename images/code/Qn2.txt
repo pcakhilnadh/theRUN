@@ -1,0 +1,34 @@
+
+                          //Program for finding Largest & Second Largest numbers
+
+#include<iostream.h>                                    //Header Files
+#include<conio.h>
+
+  void main()
+    {
+	int max=0,max2=0,num,n;;
+	cout<<"\nEnter the number of elements:";
+	cin>>n;
+	cout<<"\nEnter each elements:\n";
+
+	for(int i=0;i<n;i++)                                //Loop for input
+	     {
+		cin>>num;
+
+		if(num>max)                            //Finding Largest number
+		  {  
+			max2=max;
+		    	max=num;
+		  }
+		if(num>max2 && max!=num)               //Assigning second largest number
+		       max2=num;
+             }
+	
+ 	cout<<"\nLargest is:"<<max;
+	cout<<"\nSecond Largest is:"<<max2;
+	
+	getch();
+    
+    }
+
+                          //End of the Program

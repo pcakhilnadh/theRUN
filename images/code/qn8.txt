@@ -1,0 +1,26 @@
+                                      //Program for counting words
+
+
+ #include<stdio.h>                                              //Header Files
+
+   int main()
+     {
+	int count=1;
+	FILE *f1;
+	char ch;
+	
+	f1=open("output.txt","r");                             //Opening the File
+	
+	while((ch=fgetc(f1))!=EOF)
+	   {
+		if((ch=fgetc(f1))==" ")                        //Counting the number of spaces
+			count=count+1;
+	   }
+
+	fclose(f1);                                            //Closing the file
+	printf("\n%d words in the text is:\n",count);
+
+	return 0;
+     }
+
+					//End of the Program

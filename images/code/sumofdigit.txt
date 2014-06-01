@@ -1,0 +1,21 @@
+
+
+#include<stdio.h>
+int main()
+{
+ int n,sum=0;
+ printf("Enter the number :\n");
+ scanf("%d",&n);
+ while (n > 0)
+  {
+   int p = n % 10;
+   sum = sum + p;
+   n = n / 10;
+   if(n==0 && sum>9)
+   {
+    n=sum;
+    sum=0;
+   }
+  }
+ printf("\nSum of the digits is %d",sum);
+}

@@ -1,0 +1,53 @@
+/* program to print numbers,CEC FoCES if its a multiple of 3 and 5,CEC if multiple of three and FoceS if multiple of 3 and 5*/
+
+#include <stdio.h>
+
+
+
+main()
+
+	{
+    
+	int i;
+    
+	for(i=0;i<100;i++)
+
+        {
+            
+		if((i%3==0)&&(i%5==0))
+ 
+                {
+                   
+			 printf("CEC FoCES");
+               
+		}
+            
+		else if(i%3==0)
+                
+		{
+                    
+			printf("\n CEC");
+  
+	        }
+            
+		else if(i%5==0)
+ 
+               	{
+                    
+		printf("\n FoCES");
+                
+		}
+            
+		else
+                
+		{
+                    
+		printf("\n %d",i);
+  
+              	}
+       
+	 }
+    
+	return 0;
+
+	}

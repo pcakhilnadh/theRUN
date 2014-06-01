@@ -1,0 +1,31 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+	{
+	int limit,number,largest,second_largest;
+	cout<<"Enter the no. of elements?\n";
+	cin>>n;
+	cout<<"Enter the number";
+	cin>>number;
+	largest=number;
+	second_largest=number;
+	for(int i=0;i<n-1;i++)
+		{
+		cout<<"Enter the number";
+		cin>>number;
+		if(number>largest)
+			{
+			second_largest=largest;
+			largest=number;
+			}
+		else if(number>second_largest)
+			{
+			second_largest=number;
+			}
+		}
+	cout<<"The largest and Second largest numbers are "<<largest<<"and "<<second_largest;
+	getch();
+	}
+			
+
+		 

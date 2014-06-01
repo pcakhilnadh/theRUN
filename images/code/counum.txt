@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+
+int main()
+{
+	int count,i;
+	FILE *f;
+	char s;
+        char filenam[100];
+	count = 0;
+	printf("Enter the filename :\n");
+        scanf("%s",filenam);
+        f=fopen(filenam,"r");
+
+        while ((s = fgetc(f)) != EOF)
+	  {
+
+           if ((s = fgetc(f)) != ' ')
+	   count++;
+	}
+
+	fclose(f);
+	printf ("\n%d words in the file is \n", count);
+
+	return 0;
+}

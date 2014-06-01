@@ -1,0 +1,110 @@
+                                        //Scientific Calculator
+
+
+#include<stdio.h>                                                         //Header Files
+#include<conio.h>
+#include<math.h>
+#include<process.h>
+
+
+  int main(void) 
+   {
+	int choice, i, n1, n2;
+	float num1, num2, result;
+	clrscr();
+	do                                                                 //Menu
+	  {
+	      printf("\nSelect your operation (0 to exit):\n");
+	      printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n");
+	      printf("5. X ^ Y\n");
+	      printf("6. X ^ (1 / Y)\n");
+	      printf("7. Percentge\n8. Modulus\n");
+              printf("Choice: ");
+	      scanf("%d", &choice);
+
+	      if(choice == 0) 
+		exit(0);
+
+	      switch(choice)
+ 		 {
+			case 1:
+				printf("Enter num1:");                        //Menu Cases 
+				scanf("%f", &num1);
+				printf("\nEnter num2: ");
+				scanf("%f", &num2);
+				result = num1 + num2;
+				printf("\nResult: %f", result);
+				break;
+
+			case 2:
+				printf("Enter num1: ");
+				scanf("%f", &num1);
+				printf("\nEnter num2: ");
+				scanf("%f", &num2);
+				result = num1 – num2;
+				printf("\nResult: %f", result);
+				break;
+
+			case 3:
+				printf("Enter num1: ");
+				scanf("%f", &num1);
+				printf("\nEnter num2: ");
+				scanf("%f", &num2);
+				result = num1 * num2;
+				printf("\nResult: %f", result);
+				break;
+
+			case 4:
+				printf("Enter num1: ");
+				scanf("%f", &num1);
+				printf("\nEnter num2: ");
+				scanf("%f", &num2);
+				result = num1 / num2;
+				printf("\nResult: %f", result);
+				break;
+				
+			case 5:
+				printf("Enter num1: ");
+				scanf("%f", &num1);
+				printf("\nEnter num2: ");
+				scanf("%f", &num2);
+				result = pow(num1, num2);
+				printf("\nResult: %f", result);
+				break;
+
+			case 6:
+				printf("Enter num1: ");
+				scanf("%f", &num1);
+				printf("\nEnter num2: ");
+				scanf("%f", &num2);
+				result = pow(num, (1/num2));
+				printf("\nResult: %f", result);
+				break;
+
+			case 7:
+				printf("Enter num1: ");
+				scanf("%f", &num1);
+				printf("\nEnter num2: ");
+				scanf("%f\", &num2);
+				result = (num1 * num2) / 100;
+				printf("\nResult: %.2f", result);
+				break;
+
+			case 8:
+				printf("Enter a number: ");
+				scanf("%d", &n1);
+				printf("\nEnter second number: ");
+				scanf("%d", &n2);
+				result = n1 % n2;
+				printf("\nResult: %d", result);
+				break;
+
+			default:
+				printf("\nInvalid Choice!");
+		}
+	}
+ 	while(choice);
+	getch();
+
+	return 0;
+   }

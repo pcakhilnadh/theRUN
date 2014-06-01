@@ -1,0 +1,31 @@
+
+                         //Program to find sum of digits upto a single digit number
+
+
+#include<iostream.h>                               //Header Files
+#include<conio.h>
+    void main()
+ 	{
+	  long int rem,rem1,sum=0,sum1=0,num;
+ 	  clrscr();
+ 	  cout<<"\nEnter any number:";
+	  cin>>num;
+
+  	  while(num>0)                            //Loop for finding the sum of digits
+	   {
+	      rem=num%10;
+	      sum=sum+rem;
+	      num=num/10;
+
+  	   }
+	
+	  while(sum>0)                          //Loop for finding the sum again  
+	   {
+ 	      rem1=sum%10;                      //to get a single digit
+	      sum1=sum1+rem1;
+	      sum=sum/10;
+	   }
+	 cout<<"The sum of digitd upto a single digit is:"<<sum1;
+	 getch();
+	
+        }

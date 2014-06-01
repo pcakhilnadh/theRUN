@@ -1,0 +1,33 @@
+	     //Program to print 1-100 according to certain condition
+
+#include<iostream.h>                          //Header Files 
+#include<conio.h>
+
+  void main()
+     {
+	int lim;
+	clrscr();
+	cout<<"\nEnter the limit:";
+	cin>>lim;                            //Here limit is 100
+	for(int num=1;num<=lim;num++)        //Loop for printing
+	   {
+		if((num%3==0)&&(num%5==0))
+		   cout<<"CEC_FOCES\t";
+		
+		else if(num%5==0)
+		   cout<<"FOCES\t";
+		
+		else if(num%3==0)
+		   cout<<"CEC\t";
+		
+		else
+		   cout<<num<<"\t";
+	   }
+	
+	
+	getch();
+     
+     }
+
+
+		 //End of the Program

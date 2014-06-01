@@ -1,0 +1,28 @@
+			         //CORRECTED PROGRAM
+
+
+#include<stdio.h>                                //Header Files
+
+ void main()
+  {
+	int **p,i,j,m,n;
+	 printf("\nEnter the rows and columns:");
+	 scanf("%d%d",&m,&n);
+
+	 printf("\nEnter the elements:\n";             //Inputing elements
+	 for(i=0;i<m;i++)
+	     for(j=0;j<n;j++)
+		 scanf("%d",(*(p+i)+j));
+						      //Printing Matrix
+	for(i=0;i<m;i++)
+	    {
+		printf("\n");
+		   for(j=0;j<n;j++)
+		       printf("%d ",*(*(p+i)+j));
+	    }
+
+	getch();
+
+   }
+
+			//End of Program

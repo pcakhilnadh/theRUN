@@ -1,0 +1,105 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+  float a,b,c;
+  char o,w;
+  void ari();
+  void trig();
+int main(void)
+  {
+   do
+     {
+
+      printf("\t\t\t\tCALCULATOR n\n\t");
+      printf("1 -> Arithmetic Calculation\n\n\t");
+      printf("2 -> Trigonometric & Logical calculations\n");
+      scanf("\n%c",&o);
+      switch(o)
+          {
+          case '1': ari();
+                    break;
+          case '2': trig();
+                    break;
+          default:  printf("Invalid entry.");
+                    break;
+           }
+       printf("\n\nDo you want to continue: (y/n)\n");
+       scanf("\n\n%c",&o);
+      }while(o== 'y');
+   }
+
+
+void ari()
+   {
+   printf("\n\t\t\tArithmetic Calculation\n\n");
+   printf("Enter the expression:");
+   scanf("\n%f",&a);
+   scanf("\n%c",&o);
+   switch(o)
+     {
+     case '+':scanf("\n%f",&b);
+              c = a + b;
+              printf("\t= %.2f",c);
+              break;
+     case '-':scanf("\n%f",&b);
+              c = a - b;
+              printf("\t= %.2f",c);
+              break;
+     case '*':scanf("\n%f",&b);
+              c = a * b;
+              printf("\t= %.2f",c);
+              break;
+     case '/':scanf("\n%f",&b);
+              c = a / b;
+              printf("\t= %.2f",c);
+              break;
+     default:printf("Check the operator");
+      }
+    }
+
+void trig()
+     {
+     printf("\n\t\t\tTrigonometric & Logical calculations");
+     printf("\n\n\ts -> Sin");
+     printf("\n\n\tc -> Cos");
+     printf("\n\n\tt -> Tan");
+     printf("\n\n\tl -> Log");
+     printf("\n\n\tp -> Power");
+     printf("\n\n\tr -> Square Root\n\n");
+     scanf("\n%c",&o);
+     switch(o)
+       {
+     case 's':printf("Enter the value of sin:");
+              scanf("\n%f",&a);
+              b=sin(a);
+              printf("\tsin %.0f = %.2f",a,b);
+              break;
+     case 'c':printf("Enter the value of cos:");
+              scanf("\n%f",&a);
+              b=cos(a);
+              printf("\tcos %.0f = %.2f",a,b);
+              break;
+     case 't':printf("Enter the value of tan:");
+              scanf("\n%f",&a);
+              b=tan(a);
+              printf("\ttan %.0f = %.2f",a,b);
+              break;
+     case 'l':printf("Enter the value of log:");
+              scanf("\n%f",&a);
+              b=log10(a);
+              printf("\tlog %.0f = %.4f",a,b);
+              break;
+     case 'p':printf("Enter the base and power :");
+              scanf("\n%f",&a);
+              scanf("\n%f",&b);
+              c=pow(a,b);
+              printf("\t%.0f to the Power %.0f = %.2f",a,b,c);
+              break;
+     case 'r':scanf("\n%f",&a);
+              b=sqrt(a);
+              printf("\troot %.0f = %.2f",b);
+              break;
+     default:printf("Check the values");
+             break;
+       }
+     }

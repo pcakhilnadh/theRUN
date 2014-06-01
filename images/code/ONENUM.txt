@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int num,fact;
+ clrscr();
+ printf("\n1 to 100\n");
+ for(num=1;num<=100;num++)
+  { 
+      if(num==1)
+         {
+	 printf("1");
+         }
+      else if(num>1)
+	 {
+	    if((num%3==0)&&(num%5==0))
+		 {   
+                    printf("\nCEC FoCES");
+		 }
+	     else if(num%3==0)
+		 {
+		    printf("\nCEC");
+		 }
+	     else if(num%5==0)
+		 {
+		    printf("\nFoCES");
+		 }
+	     else
+		 {
+		   printf("\n%d",num);
+		 }
+	 }
+    }
+ getch();
+
+  }

@@ -1,0 +1,32 @@
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+  int i,j,num,x=1;
+  printf("Enter the Number of Rows :\n");
+  scanf("%d",&num);
+  printf("\n\n");
+  printf("OUTPUT:\n");
+  printf("------");
+  printf("\n\n");
+  printf("The Pascal triangle in the reverse order is\n\n\n");
+  for(i=num;i>=1;i--)
+      {
+     for(j=1;j<=i;j++)
+       {
+        if(j==1)
+           {
+            x=1;
+            printf("%d",x);
+           }
+        else
+           {
+            x=(x*(i-j+1)/(j-1));
+            printf("%d",x);
+           }
+        }
+    printf("\n");
+      }
+
+}

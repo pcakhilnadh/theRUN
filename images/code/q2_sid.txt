@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main() {
+	int number, sum;
+	printf("Enter the number : ");
+	scanf("%d", &number);
+	do {
+		sum = 0;
+		while(number>0) {
+			sum += number%10;
+			number /= 10;
+		}
+		number = sum;
+	}while(sum>9);
+	printf("Result = %d", sum);
+	return 0;
+}

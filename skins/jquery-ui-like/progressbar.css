@@ -1,0 +1,18 @@
+.jquery-ui-like {
+	border-radius: 4px;
+	background: #FFF;
+	border: 1px solid #AAA;
+	overflow: hidden;		
+}
+.jquery-ui-like div {
+	background-image: url(road.jpg);
+	float: left;
+	border-right: 1px solid #AAA;
+	height: 100%;
+    color: white;
+    text-align: right;
+    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+    background-color: #0099ff;
+
+}

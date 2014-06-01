@@ -1,0 +1,12 @@
+/*Display ASCII values*/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    	char ascii;
+	cout << "Give character: ";		
+	cin >> ascii;              //reads character
+	cout << "Its ascii value is: " << (int) ascii << endl;
+	return 0;
+}

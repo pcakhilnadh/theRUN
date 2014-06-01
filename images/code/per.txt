@@ -1,0 +1,47 @@
+                            //Program to find all Permutations of a string
+
+
+#include<iostream.h>                                      //Header Files
+#include<conio.h>
+#include<string.h>
+
+
+  char str[100];
+
+  void permutation(int size)                                //Function for finding permutations
+    {
+ 	char temp;
+        if(size<=0)
+	 {
+	    cout<<str<<"\t";
+	    return;
+  	 }
+
+
+       for(int i=0;i<size;i++)
+  	{
+	   temp=str[i];
+	   str[i]=str[size-1];
+	   str[size-1]=temp;
+	   permutation(size-1);
+	   temp=str[i];
+	   str[i]=str[size-1];
+	   str[size-1]=temp;
+   	}
+     }
+  
+
+   int main()
+  
+   {
+     clrscr();
+     cout<<"\nEnter the string:";
+     cin>>str;
+     cout<<"\nThe permutation are:\n";
+     permutation(strlen(str));                            //Fuction Call
+     getch();
+     
+     return 0;
+  
+   }
+

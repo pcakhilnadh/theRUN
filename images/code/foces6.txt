@@ -1,0 +1,9 @@
+#include <iostream.h>
+int main()
+{
+ char x;
+ cout <<"Enter any character: ";
+ cin >>x;
+ cout <<"\n \n Its ascii value is: " <<(int)ascii <<endl;
+  return 0;
+}

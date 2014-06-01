@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i=1;
+clrscr();
+for(i=1;i<=100;i++)
+{
+if(i%3==0&&i%5==0)
+{
+printf("?CEC FoCES?,");
+continue;
+}
+else if(i%3==0)
+{
+printf("?CEC?,");
+continue;
+}
+else if (i%5==0)
+{
+printf("?FoCES?,");
+continue;
+}
+else
+printf("%d,",i);
+}
+getch();
+}

@@ -1,0 +1,552 @@
+/* Website design by geets */
+/*------------------------- Layout styles ------------------------*/ 
+html 
+{
+	font-size:100.1%;
+	min-height:101%;
+	background-color:#ffffff;
+}
+
+body{
+	margin:0;
+	background:url(../images/bg-body.jpg);
+	
+}
+
+.page{
+	background:url(../images/bg-header.jpg) no-repeat center top;
+}
+
+/*------------------------- Font ------------------------*/ 
+@font-face {
+    font-family: 'RokkittRegular';
+    src: url('../fonts/rokkitt-regular-webfont.eot');
+    src: url('../fonts/rokkitt-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rokkitt-regular-webfont.woff') format('woff'),
+         url('../fonts/rokkitt-regular-webfont.ttf') format('truetype'),
+         url('../fonts/rokkitt-regular-webfont.svg#RokkittRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Juste';
+src: url('../fonts/Juste.ttf');
+}
+
+/*------------------------- Header ------------------------*/ 
+.header{
+	background:url(../images/bg-navigation.jpg) no-repeat center 90px;
+	width:940px;
+	margin:0 auto;
+	height:105px;
+	padding:36px 10px 0;
+}
+.header a#logo{
+	display:block;
+	float:left;
+	outline:none;
+}
+.header a#logo img{
+	border:0;
+}
+.header ul{
+	margin:0;
+	list-style:none;
+	padding:13px 0 0;
+	float:right;
+}
+.header ul li{
+	float:left;
+	margin:0 0 0 63px;
+}
+.header ul li a:hover{
+	color:#f78117;
+}
+.header ul li a{
+	font-size:16px;
+	text-decoration:none;
+	color:#5e5e5e;
+	font-family: 'Juste';
+	outline:none;
+}
+
+/*------------------------- Body ------------------------*/ 
+.body{
+	width:940px;
+	margin:0 auto;
+	padding:0 10px;
+	overflow:hidden;
+}
+.body div#featured{
+	background:url(../images/house.jpg) no-repeat right top;
+	height:448px;
+	padding:0 0 17px;
+}
+.body div#featured h3{
+	color:#f78117;
+	font-size:36px;
+	font-family: 'RokkittRegular';
+	margin:0 0 30px;
+	width:490px;
+	padding:100px 0 0;
+	font-weight:normal;
+}
+.body div#featured p{
+	width:480px;
+	color:#5d5d5d;
+	font-family: 'RokkittRegular';
+	font-size:16px;
+	line-height:25px;
+	text-shadow: 0 1px 0 #fcfcfc;
+	text-align:justify;
+	margin:0;
+}
+.body div#featured input{
+	background:url(../images/interface.jpg) no-repeat;
+	border:0;
+    height:48px;
+    width:216px;
+	font-family: 'RokkittRegular';
+	color:#fff;
+	font-size:30px;
+	margin:28px 0 0 125px;
+	cursor:pointer;
+	outline:none;
+}
+.body ul.blog{
+	list-style:none;
+	margin:40px 0 0;
+	padding:0 0 50px;
+	background:url(../images/separator.jpg) no-repeat center top;
+	overflow:hidden;
+}
+.body ul.blog li:first-child{
+	margin:60px 0 0;
+}
+.body ul.blog li{
+	float:left;
+	background:url(../images/interface.jpg) no-repeat 0 -68px!important;
+	margin:60px 0 0 48px;
+	height:400px;
+	padding:0;
+}
+.body ul.blog li div{
+	width:281px;
+	height:380px;
+	text-align:center;
+	padding: 8px 0 20px 0;
+	float:none;
+	margin:0;
+	background:none;
+}
+.body ul.blog li div a img{
+	border:0;
+	margin:0 0 0 -3px;
+}
+.body ul.blog li div a img:hover{
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+.body ul.blog li div p{
+	width:258px;
+	text-align:justify;
+	color:#828081;
+	font-family: 'RokkittRegular';
+	margin:17px 0 0 10px;
+	line-height:20px;
+	font-size:14px;
+	background:none;
+	padding:0;
+}
+.body ul.blog li div a:first-child{
+	margin:0;
+	padding:0;
+	background:none;
+	width:auto;
+}
+.body ul.blog li div a:hover{
+	color:#F78117;
+}
+.body ul.blog li div a{
+	color:#606060;
+	font-family: 'RokkittRegular';
+	font-style:italic;
+	text-decoration:none;
+	padding:98px 0 0;
+	margin:32px auto 0;
+	display:block;
+	width: 150px;
+	background:url(../images/button-more.jpg) no-repeat center top;
+	outline:none;
+	font-size:16px;
+	font-weight:normal;
+	text-shadow: 0 1px 0 #fcfcfc;
+}
+.body h3{
+	font-family: 'RokkittRegular';
+	font-size:16px;
+	font-weight:bold;
+	color:#636363;
+	margin:15px 0 0;
+	line-height:21px;
+}
+.body p{
+	font-family: 'RokkittRegular';
+	font-size:16px;
+	text-align:justify;
+	color:#636363;
+	margin:0 0 20px;
+	line-height:21px;
+}
+.body p a{
+	outline:none;
+	color:#636363;
+}
+.body ul{
+	list-style:none;
+    margin:0;
+    padding:0;
+	overflow:hidden;
+}
+.body ul li:first-child{
+	background:none;
+	padding:0 0 30px;
+}
+.body ul li{
+	overflow:hidden;
+	background:url(../images/separator.jpg) no-repeat center top;
+	padding:30px 0;
+}
+.body ul li div.featured{
+	background:url(../images/interface.jpg) no-repeat 0 -68px;
+	width:281px;
+	height:292px;
+	text-align: center;
+	margin:0;
+}
+.body ul li div.featured img{
+	margin:10px 0 0 -3px;
+	border:0;
+}
+.body ul li div.featured ul{
+	overflow:hidden;
+	margin:2px 0 0 10px;
+	
+}
+.body ul li div.featured ul li:first-child{
+	margin:0;
+}
+.body ul li div.featured ul li{
+	float:left;
+	margin:0 0 0 18px;
+	background:none;
+	padding:0;
+}
+.body ul li div.featured ul li a{
+	padding:0;
+}
+.body ul li div.featured ul li a img{
+	margin:0;
+}
+.body ul li div.featured ul li a img:hover{
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+.body ul li div.featured a{
+	clear:both;
+	display:block;
+	font-size:13px;
+	font-family: 'RokkittRegular';
+	text-decoration:none;
+	color:#8a8889;
+	font-weight:bold;
+	padding:5px 0 0;
+	width:auto;
+	outline:none;
+}
+.body ul li div{
+	float:left;
+	margin:0 0 0 50px;
+	width:609px;
+	background:url(../images/button-more.jpg) no-repeat left bottom;
+}
+.body ul li div h3{
+	margin:0;
+	font-size:20px;
+	font-weight:bold;
+	font-family: 'RokkittRegular';
+	color:#f28220;
+	line-height:22px;
+}
+.body ul li div p{
+	line-height:22px;
+	font-family: 'RokkittRegular';
+	font-size:14px;
+	color:#5D5D5D;
+	padding:0 0 90px;
+	margin:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.log 
+{
+background: url(../images/bc.png) no-repeat;
+padding-left: 55px;
+padding-bottom: 95px;
+padding-top: 36px;
+margin-left: 300px;
+}
+
+#col
+{
+margin-left: 60px;
+}
+.desc
+{
+margin-left: 0px;
+width:420px;
+padding:20px;
+
+}
+#hbc
+{
+position:absolute;
+margin-left:55px;
+text-align: center;
+color:red;
+
+}
+#hbca
+{
+position:relative;
+padding-left: 20px;
+margin-left:55px;
+margin-top: 125px;
+text-align: center;
+color:red;
+
+}
+#count
+{
+		
+	padding-left: 100px;
+
+}
+.desc
+{
+margin-left:480px;
+}
+.reg
+{
+margin-left:200px;
+margin-top:100px;
+}
+.log1
+{
+
+margin-left:650px;
+margin-top:-100px;
+}
+.reg:hover
+{
+background:url(../images/rhover.png) no-repeat ;
+}
+.log1:hover
+{
+background:url(../images/lhover.png) no-repeat ;
+}
+#border1
+{
+padding-top:160px;
+padding-bottom:120px;
+background:url(../images/ipad.png) no-repeat ;
+}
+.regp
+{
+padding-left: 55px;
+margin-left: 40px;
+}
+.rules
+{
+margin-left:200px;
+}
+
+
+
+
+
+
+input#yourid {
+	cursor: pointer;
+	outline: none;
+	background-color: white;
+	color: #3C3C46;
+}
+ 
+input#yourid:hover {
+	background-color: #454546;
+	color: white;
+}
+ 
+textarea, select, input,button#submit {
+	color: #667;
+	padding: 4px;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+}
+.sub {
+margin-left:330px;
+}
+#chead{
+	
+color:#095bbc;
+font-size:150%;
+font-weight:bold;
+font-family: 'RokkittRegular';
+ 
+}
+#cg,#mem {
+color:#667;
+font-size:150%;
+font-weight:bold;
+font-family: 'RokkittRegular';
+} 
+#rul {
+padding:10px;
+float:right;
+margin-right:80px;
+border:0.5px solid #c1c1c1 ;
+box-shadow:3px 3px 3px #888888;
+background-color:#5f5f5f;
+border-radius:5px;
+
+}
+#rul a
+{
+text-decoration:none;
+color:white;
+font-family:'RokkittRegular';
+
+}
+#rul a:hover {
+color:black;
+}
+#border1 {
+text-allign:center;
+margin-left:300px;
+}
+#mem1 table,#mem1 td,#mem1 tr
+{
+text-align:center;
+border:1px none #f4f4f4;
+}
+#mem1 table
+{
+width:75%;
+}
+#mem1 tr
+{
+height:50px;
+}
+#mem1
+{
+color:#667;
+font-size:150%;
+font-weight:bold;
+font-family: 'RokkittRegular';
+}
+/*------------------------- Footer ------------------------*/ 
+.footer{
+	width:940px;
+	background:url(../images/bg-footer.jpg) no-repeat center top;
+	padding:65px 10px 207px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.footer ul{
+	list-style:none;
+	margin:0 0 0 60px;
+	padding:0;
+	overflow:hidden;
+	float:left;
+}
+.footer ul li:first-child a{
+	border:none;
+	padding:0 6px 0 0;
+}
+.footer ul li{
+	float:left;
+}
+.footer ul li a:hover{
+	color:#F78117;
+}
+.footer ul li a{
+	border-width: 1px;
+	border-color:#5b5b5b;
+	border-style: none none none solid;
+	color:#5b5b5b;
+	font-size:10px;
+	font-family: Trebuchet MS;
+	text-decoration:none;
+	font-weight:bold;
+	padding:0 6px;
+	outline:none;
+}
+.footer p{
+	color:#5b5b5b;
+	font-size:10px;
+	font-family: Trebuchet MS;
+	font-weight:bold;
+	float:left;
+	margin:6px 0 0 135px;
+}
+.footer div.connect{
+	float:right;
+	margin:0 0 0 92px;
+}
+.footer div.connect a{
+	float:left;
+	outline:none;
+
+}
+.footer div.connect a#facebook{
+	width:27px;
+	height:28px;
+	display:block;
+	text-indent:-9999px;
+	background:url(../images/icons.gif) no-repeat;
+}
+.footer div.connect a#twitter{
+	width:36px;
+	height:28px;
+	display:block;
+	text-indent:-9999px;
+	background:url(../images/icons.gif) no-repeat 0 -48px;
+	margin:0 0 0 68px;
+}
+.footer div.connect a img{
+	padding-left: 20px;
+
+	width:36px;
+	height:28px;
+	
+}

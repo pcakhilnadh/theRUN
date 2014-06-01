@@ -1,0 +1,37 @@
+                       //Program to print Pascal's Triangle in reverse order
+
+
+
+#include<stdio.h>                                           //Header Files
+#include<conio.h>
+  long fact(int);
+
+  int main()
+    {
+ 	int i,row,c;
+	 clrscr();
+	 printf("\nEnter the rows:");
+	 scanf("%d",&row);
+
+	 for(i=row;i>=0;i--)                                    //Loop for printing triangle
+  	   {
+	    for(c=0;c<=i;c++)
+	    printf("%ld ",fact(i)/(fact(c)*fact(i-c)));
+	    printf("\n");
+	   }
+   	getch();
+   
+	return 0;
+    }
+
+  long fact(int num)
+     {
+   	int c;
+   	long result=1;
+   	for(c=1;c<=num;c++)
+    	result=result*c;
+
+	return(result);
+     }
+
+                   //End of the program

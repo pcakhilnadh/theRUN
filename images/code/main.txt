@@ -1,0 +1,46 @@
+/* Program to implement a scientific claculator*/
+
+#include <stdio.h>
+
+
+main()
+   
+	{
+ 
+       	int num1,num2;                
+       
+	char ch;                                                                    //basic operator
+
+        scanf("%d %d",&num1,&num2);
+ 
+	scanf("%s",&ch);            
+        
+	switch(ch)
+           
+	 {
+                
+		case '+':               
+                       
+			 printf("%d",num1+num2);                             //addition
+               
+		case '*':
+                        
+			printf("%d",num1*num2);                             //multiplication
+                
+		case '-':
+   
+	               	printf("%d",num1-num2);                              //differnce
+                
+		case '/':
+  
+                      	printf("%d",num1/num2);                             //division
+                
+		case '%':
+                        
+			printf("%d", num1%num2);                            //modulas
+                
+            
+	}
+   
+	return 0;
+    }

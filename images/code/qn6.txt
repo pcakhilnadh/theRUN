@@ -1,0 +1,15 @@
+
+                        //Program to find ASCII value of a character
+
+  #include<stdio.h>                                        //Header File
+     void main()
+ 	{
+  	   char ch;
+  	   printf("\nEnter a character:");
+  	   scanf("%c",&ch);                                //Taking a character
+  	   printf("ASCII value of %c = %d",ch,ch);         //Printing the ASCII value
+  	   getch();
+        }
+
+
+                       //End of the Program
