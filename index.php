@@ -9,8 +9,8 @@ require 'src/facebook.php';
 
 
 $facebook = new Facebook(array(
-  'appId'  => '594426097255705',
-  'secret' => '874c52194eb9e373b60327e3b4876270',
+  'appId'  => '###############',
+  'secret' => '###############',
   
 ));
 
